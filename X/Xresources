@@ -1,0 +1,24 @@
+URxvt.termName:         rxvt-256color
+URxvt.reverseVideo:     True
+
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+! Font
+URxvt*font: xft:Liberation Mono for Powerline:pixelsize=14,style=regular
+
+! Kerning
+URxvt.letterSpace: -1
+
+! Scrollbar
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:        true
+URxvt*scrollColor:        #000000
+
+! Disable unicode key sequence
+URxvt*iso14755: False
+
