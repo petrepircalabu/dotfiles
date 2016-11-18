@@ -6,11 +6,11 @@ call vundle#begin('~/.config/nvim/bundle')
 
 Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'MarcWeber/vim-addon-local-vimrc'
+Plugin 'MarcWeber/vim-addon-local-vimrc'
 
 Plugin 'gtags.vim'
 
-Bundle 'Tabular'
+"Plugin 'Tabular'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline
@@ -30,10 +30,8 @@ autocmd ColorScheme * highlight Pmenu ctermbg=188
 autocmd ColorScheme * highlight PmenuSel ctermbg=235 ctermfg=White
 autocmd ColorScheme * highlight PmenuSbar ctermbg=0
 
-Plugin 'Shougo/denite.nvim'
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Tagbar
+" tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'Tagbar'
 let g:go_auto_type_info = 1
@@ -63,3 +61,5 @@ colorscheme elflord
 
 set fillchars+=vert:│
 autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=White ctermbg=NONE
+
+set clipboard+=unnamedplus
