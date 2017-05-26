@@ -8,7 +8,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'MarcWeber/vim-addon-local-vimrc'
 
-Plugin 'gtags.vim'
+"Plugin 'gtags.vim'
+Plugin 'whatot/gtags-cscope.vim'
 
 "Plugin 'Tabular'
 
@@ -55,7 +56,14 @@ call vundle#end()
 
 filetype plugin indent on
 
-
+" GTAGS
+let cscopeprg = 'gtags-cscope'
+let Gtags_OpenQuickfixWindow = 0
+let GtagsCscope_Auto_Map = 1
+"let GtagsCscope_Ignore_Case = 1
+let GtagsCscope_Absolute_Path = 1
+let GtagsCscope_Auto_Load = 1
+let GtagsCscope_Use_Old_Key_Map = 1
 
 colorscheme elflord
 
