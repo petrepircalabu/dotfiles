@@ -1,4 +1,7 @@
 set nocompatible
+set ignorecase
+set smartcase
+
 autocmd ColorScheme * highlight SignColumn ctermbg=None ctermfg=None
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
