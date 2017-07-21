@@ -39,6 +39,7 @@ autocmd ColorScheme * highlight PmenuSbar ctermbg=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'Tagbar'
 let g:go_auto_type_info = 1
+let g:tagbar_left = 1
 nmap <F8> :TagbarToggle<CR>
 
 
