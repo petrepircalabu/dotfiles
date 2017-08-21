@@ -11,8 +11,18 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'MarcWeber/vim-addon-local-vimrc'
 
-"Plugin 'gtags.vim'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Gtags-cscope
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'whatot/gtags-cscope.vim'
+
+let cscopeprg = 'gtags-cscope'
+let Gtags_OpenQuickfixWindow = 0
+let GtagsCscope_Auto_Map = 1
+"let GtagsCscope_Ignore_Case = 1
+let GtagsCscope_Absolute_Path = 1
+let GtagsCscope_Auto_Load = 1
+let GtagsCscope_Use_Old_Key_Map = 1
 
 "Plugin 'Tabular'
 
@@ -23,6 +33,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Use Powerline fonts
 let g:airline_powerline_fonts = 1
+" airline-tabline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':p:t'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Deoplete
@@ -55,19 +68,22 @@ autocmd ColorScheme * highlight BookmarkAnnotationSign ctermbg=None ctermfg=Gree
 autocmd ColorScheme * highlight BookmarkLine ctermbg=Yellow ctermfg=None
 autocmd ColorScheme * highlight BookmarkAnnotationLine ctermbg=Green ctermfg=None
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CTRL+P
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_cmd = 'CtrlPBuffer'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'scrooloose/nerdtree'
+nmap <F7> :NERDTreeToggle<CR>
+
 " After all plugins...
 call vundle#end()
 
 filetype plugin indent on
-
-" GTAGS
-let cscopeprg = 'gtags-cscope'
-let Gtags_OpenQuickfixWindow = 0
-let GtagsCscope_Auto_Map = 1
-"let GtagsCscope_Ignore_Case = 1
-let GtagsCscope_Absolute_Path = 1
-let GtagsCscope_Auto_Load = 1
-let GtagsCscope_Use_Old_Key_Map = 1
 
 colorscheme elflord
 
