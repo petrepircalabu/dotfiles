@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Inconsolata 12
+font = Liberation Mono Regular 11
 scrollback_lines = 10000
 search_wrap = true
 #icon_name = terminal
@@ -31,37 +31,46 @@ filter_unmatched_urls = true
 # emit escape sequences for extra modified keys
 #modify_other_keys = false
 
-# ----------------------------
-# Contrasty Darkness
-# Version: 2016-02-19
-# https://www.markusweimar.de/
-# ----------------------------
-foreground = #ffffff
-foreground_bold = #ffffff
-foreground_dim = #cccccc
-background = #000000
+[colors]
+
+# special
+foreground      = #c5c8c6
+foreground_bold = #c5c8c6
+cursor          = #c5c8c6
+#background      = #1d1f21
+background      = #000000
+
 # black
-color0  = #000000
-color8  = #000000
+color0  = #282a2e
+color8  = #373b41
+
 # red
-color1  = #ff0000
-color9  = #ff0000
+color1  = #a54242
+color9  = #cc6666
+
 # green
-color2  = #00ff00
-color10 = #00ff00
+color2  = #8c9440
+color10 = #b5bd68
+
 # yellow
-color3  = #ffff00
-color11 = #ffff00
+color3  = #de935f
+color11 = #f0c674
+
 # blue
-color4  = #008fff
-color12 = #008fff
+color4  = #5f819d
+color12 = #81a2be
+
 # magenta
-color5  = #ff00ff
-color13 = #ff00ff
+color5  = #85678f
+color13 = #b294bb
+
 # cyan
-color6  = #00ffff
-color14 = #00ffff
+color6  = #5e8d87
+color14 = #8abeb7
+
 # white
+color7  = #707880
+color15 = #c5c8c6
 
 
 [hints]
