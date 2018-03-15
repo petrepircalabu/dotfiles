@@ -80,6 +80,12 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 Plugin 'scrooloose/nerdtree'
 nmap <F7> :NERDTreeToggle<CR>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Rust
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
+
 " After all plugins...
 call vundle#end()
 
