@@ -86,6 +86,11 @@ nmap <F7> :NERDTreeToggle<CR>
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" TomTom Comment
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'tomtom/tcomment_vim'
+
 " After all plugins...
 call vundle#end()
 
