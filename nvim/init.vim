@@ -102,3 +102,9 @@ set fillchars+=vert:│
 autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=White ctermbg=NONE
 
 set clipboard+=unnamedplus
+
+augroup AutoSaveFolds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent loadview
+augroup END
