@@ -26,7 +26,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (company helm-gtags powerline))))
+ '(custom-safe-themes
+   (quote
+    ("3eb93cd9a0da0f3e86b5d932ac0e3b5f0f50de7a0b805d4eb1f67782e9eb67a4" default)))
+ '(package-selected-packages (quote (airline-themes company helm-gtags powerline))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -51,3 +54,6 @@
 
 (require 'powerline)
 (powerline-default-theme)
+
+(require 'airline-themes)
+(load-theme 'airline-dark)
