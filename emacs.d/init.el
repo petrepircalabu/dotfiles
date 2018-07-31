@@ -70,3 +70,6 @@
       `((".*" . ,emacs-autosave-directory))
       auto-save-file-name-transforms
       `((".*" ,emacs-autosave-directory t)))
+
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
