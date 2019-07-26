@@ -3,14 +3,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  #TERM: xterm-256color
+  TERM: xterm-alacritty
 
 window:
   # Window dimensions (changes require restart)
@@ -210,26 +210,48 @@ colors:
   #  background: '0x404040'
 
   # Normal colors
+  # normal:
+  #    black:   '0x000000'
+  #    red:     '0xd54e53'
+  #    green:   '0xb9ca4a'
+  #    yellow:  '0xe6c547'
+  #    blue:    '0x7aa6da'
+  #    magenta: '0xc397d8'
+  #    cyan:    '0x70c0ba'
+  #    white:   '0xeaeaea'
+
+  # Tango
   normal:
-    black:   '0x000000'
-    red:     '0xd54e53'
-    green:   '0xb9ca4a'
-    yellow:  '0xe6c547'
-    blue:    '0x7aa6da'
-    magenta: '0xc397d8'
-    cyan:    '0x70c0ba'
-    white:   '0xeaeaea'
+    black:   '0x2E3436'
+    red:     '0xCC0000'
+    green:   '0x4E9A06'
+    yellow:  '0xC4A000'
+    blue:    '0x3465A4'
+    magenta: '0x75507B'
+    cyan:    '0x06989A'
+    white:   '0xD3D7CF'
 
   # Bright colors
   bright:
-    black:   '0x666666'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0xe7c547'
-    blue:    '0x7aa6da'
-    magenta: '0xb77ee0'
-    cyan:    '0x54ced6'
-    white:   '0xffffff'
+    black:   '0x555753'
+    red:     '0xEF2929'
+    green:   '0x8AE234'
+    yellow:  '0xFCE94F'
+    blue:    '0x729FCF'
+    magenta: '0xAD7FA8'
+    cyan:    '0x34E2E2'
+    white:   '0xEEEEEC'
+
+  # Bright colors
+  #   bright:
+  #    black:   '0x666666'
+  #    red:     '0xff3334'
+  #    green:   '0x9ec400'
+  #    yellow:  '0xe7c547'
+  #    blue:    '0x7aa6da'
+  #    magenta: '0xb77ee0'
+  #    cyan:    '0x54ced6'
+  #    white:   '0xffffff'
 
   # Dim colors
   #
